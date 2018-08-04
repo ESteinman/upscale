@@ -9,7 +9,6 @@
   %body
     - unless current_user 
       = link_to 'Log in with Facebook', user_facebook_omniauth_authorize_path
-      = link_to 'Log in', new_user_session_path
     = notice
     = flash[:error]
     = yield

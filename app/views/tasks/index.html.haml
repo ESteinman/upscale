@@ -1,6 +1,9 @@
 %h1 Tasks#index
 %p Find me in app/views/tasks/index.html.haml
 
+= link_to 'Log in', new_user_session_path
+= link_to 'Sign up', new_user_registration_path
+
 = link_to "New Task", new_task_path
 - @tasks.each do |task|
     = link_to task.title, task_path(task)
