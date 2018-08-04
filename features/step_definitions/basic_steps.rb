@@ -10,6 +10,10 @@ Given("I am on the signup page") do
     visit new_user_registration_path
 end
 
+Given("I am on the login page") do
+    visit new_user_session_path
+end
+
 Given("I am on New Task page") do
     visit new_task_path
 end

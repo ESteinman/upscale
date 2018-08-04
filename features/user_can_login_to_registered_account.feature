@@ -16,5 +16,4 @@ Feature: User can login to a registered account
         And I fill in 'Email' with 'pablo@test.com'
         And I fill in 'Password' with 'my-password'
         And I click on 'Log in'
-        Then I should be on the landing page
-        And I should see 'Welcome back'
+        Then I am on the landing page
